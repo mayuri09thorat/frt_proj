@@ -1,5 +1,5 @@
 # frt_proj
-# Diabetes-prediction
+## Project Demo URL https://diabetiesproject.azurewebsites.net
 
 
 
