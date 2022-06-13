@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes prediction</title>
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<style>
+body {
+  background-image: url('C:\Users\Dell\Downloads\FRT-project-2-master\static\BackgroundImage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+ <div class="main";column-gap: 40px>
+	<center><h2>Diabetes prediction (Demo ML deployment)</h2>
+     <form action="{{ url_for('predict')}}"method="post">
+    	<input type="number"  name="Pregnancies" placeholder="Pregnancies" required="required"/>
+		<br>
+		<br>
+		<input type="number" name="Glucose" placeholder="Glucose level" required="required" />
+		<br>
+		<br>
+		<input type="number" name="BloodPressure" placeholder="BloodPressure level" required="required" />
+		<br>
+		<br>
+		<input type="number" name="SkinThickness" placeholder="SkinThickness" required="required" />
+		<br>
+		<br>
+		<input type="number" name="Insulin" placeholder="Insulin level" required="required" />
+		<br>
+		<br>
+		<input type="number" name="BMI" placeholder="BMI" required="required" />
+		<br>
+		<br>
+		<input type="number" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction" required="required" />
+		<br>
+		<br>
+		<input type="number" name="Age" placeholder="Age" required="required" />
+		<br>
+		<br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Diabetes</button>
+    </form>
+   <br>
+</center>
+ </div>	
+</body>
+</html>
